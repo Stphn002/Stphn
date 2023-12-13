@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .progress {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  .progress-bar {
+    width: 0%;
+    height: 30px;
+    background-color: #0000FF;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="progress">
+  <div class="progress-bar">0%</div>
+</div>
+
+<br>
+
+
+<button onclick="setWidth(33)" background-color="#FF0000">Item 1</button>
+<button onclick="setWidth(66)" background-color="#FF0000">Item 2</button>
+<button onclick="setWidth(100)"background-color="#FF0000">Item 3</button>
+</div>
+
+<script>
+  function setWidth(width) {
+    document.querySelector('.progress-bar').style.width = width + '%';
+    document.querySelector('.progress-bar').innerHTML = width + '%';
+  }
+</script>
+
+</body>
+</html>
