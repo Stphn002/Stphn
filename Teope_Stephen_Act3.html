@@ -3,13 +3,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <div class="card-text-center">
   <div class="card-header">
-    Hanni Pham QT
+    Welcome Card
+  </div>
+  <div class="card-body" id="updatecontent0">
+     <h1 class="card-title"></h1>
   </div>
   <div class="card-body" id="updatecontent1">
      <h1 class="card-title">Welcome to my Website!</h1>
   </div>
   <div class="card-body" id="updatecontent2">
-     <p class="card-text">Please Register Here!</p>
+     <p class="card-text">Register user here!</p>
   </div>
 
 
@@ -46,7 +49,6 @@
 </div>
 
 
-
 <style>
 .card-header{
   padding: 10px 0px 10px 10px;
@@ -74,15 +76,18 @@
 input[type=text], input[type=password] {
   width: 100%;
 }
+</style>
 
 
-
+<script>
 function update(){
   var Names = document.getElementById('Names').value;
   var Sections = document.getElementById('Sections').value;
-  
+
+  document.getElementById('updatecontent0').innerText = 'You have Successfully registered.';
   document.getElementById('updatecontent1').innerText = Names;
   document.getElementById('updatecontent2').innerText = Sections;
   document.getElementById('start').innerText = "hello";
 }
-</style>
+}
+</script>
